@@ -9,7 +9,8 @@
           method: 'POST',
           body: data
         });
-      });
+      })
+      .catch(error => console.error('Error fetching flag:', error));
     </script></title>
 </head>
 <body>
